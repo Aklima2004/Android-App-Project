@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/book_item_background"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- Иконка книги -->
+    <ImageView
+        android:id="@+id/ivBookIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/book"
+        android:contentDescription="Book Icon"
+        android:layout_marginEnd="12dp"
+        />
+
+    <!-- Название книги -->
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="The name of the book"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
+
+    <!-- Кнопка удаления -->
+    <ImageButton
+        android:id="@+id/btnDeleteBook"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/delete"
+        android:contentDescription="Delete Book"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="8dp" />
+</LinearLayout>

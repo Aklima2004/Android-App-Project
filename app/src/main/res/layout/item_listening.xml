@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/video_player_background"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <!-- Верхняя часть: Заголовок -->
+    <TextView
+        android:id="@+id/tvListeningName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- Центральная часть: Превью видео -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@android:color/black">
+
+        <!-- Превью видео -->
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- Play-кнопка -->
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play"
+            app:tint="@android:color/white"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:contentDescription="Play/Pause Button" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Текущее время -->
+        <TextView
+            android:id="@+id/tvCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <!-- Полоса прогресса -->
+        <SeekBar
+            android:id="@+id/seekBarProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progress="0" />
+
+        <!-- Общее время (автоматически обновляется) -->
+        <TextView
+            android:id="@+id/tvTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02:07"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- Кнопка удаления -->
+        <ImageButton
+            android:id="@+id/btnDeleteListening"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/delete"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:contentDescription="Delete Button" />
+
+        <!-- Кнопка опций -->
+        <ImageButton
+            android:id="@+id/btnMoreOptions"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/vert"
+            app:tint="@android:color/white"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:contentDescription="More Options Button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,263 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#17044B">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="#00BCD4"
+        android:shadowDx="5"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="35dp" />
+
+    <!-- Прокручиваемый контент -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <!-- Общие настройки -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General settings"
+                android:textSize="24sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:shadowColor="#00BCD4"
+                android:shadowDx="5"
+                android:shadowDy="2"
+                android:shadowRadius="5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Notifications"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"/>
+                <Switch
+                    android:id="@+id/switchGeneralNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sound"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5" />
+                <Switch
+                    android:id="@+id/switchSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vibration"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5" />
+                <Switch
+                    android:id="@+id/switchVibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Настройки обновлений -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="System updates"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:shadowColor="#00BCD4"
+                android:shadowDx="5"
+                android:shadowDy="2"
+                android:shadowRadius="5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Updating applications"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5" />
+                <Switch
+                    android:id="@+id/switchAppUpdates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Account Reminder"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5" />
+                <Switch
+                    android:id="@+id/switchBillReminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stocks"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5" />
+                <Switch
+                    android:id="@+id/switchPromotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Discounts"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5" />
+                <Switch
+                    android:id="@+id/switchDiscountAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Request for payment"
+                    android:textColor="#00BCD4"
+                    android:textSize="19sp"
+                    android:shadowColor="#03A0B4"
+                    android:shadowDx="5"
+                    android:shadowDy="2"
+                    android:shadowRadius="5" />
+                <Switch
+                    android:id="@+id/switchPaymentRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Навигационный бар -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        android:elevation="8dp" />
+</LinearLayout>

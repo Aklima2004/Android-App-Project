@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#9C9410F2">
+
+    <!-- Поле для ввода названия книги -->
+
+    <!-- Поле для ввода автора книги -->
+    <EditText
+        android:id="@+id/etBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_edittext"
+        android:hint="The name of the book"
+        android:inputType="textCapWords"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="The author of the book"
+        android:background="@drawable/background_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textCapWords" />
+
+    <!-- Кнопка выбора файла -->
+    <Button
+        android:id="@+id/btnSelectFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a file"
+        android:background="#40006B"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Выбранный файл -->
+    <TextView
+        android:id="@+id/tvSelectedFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The file is not selected"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка сохранения -->
+    <Button
+        android:id="@+id/btnSaveBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="#40006B"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#A0FF03A7">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        android:contentDescription="Delete Task"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Кнопка "Добавить Listening" -->
+    <Button
+        android:id="@+id/btnAddListening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add listening"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_edittext"
+        android:backgroundTint="#78003F"
+        android:textColor="@color/white" />
+
+    <!-- Список Listening -->
+    <ListView
+        android:id="@+id/lvListening"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rvListening"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:padding="10dp"-->
+<!--        android:scrollbars="vertical"/>-->
+
+</LinearLayout>

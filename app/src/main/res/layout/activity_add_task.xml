@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FFA07A"
+    android:elevation="4dp">
+
+    <!-- Spinner для выбора категории -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp" />
+
+    <!-- Поле ввода: Тақырыбы/Номері -->
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title/Number"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_edittext"
+        android:padding="12dp" />
+
+    <!-- Поле ввода: Орысша -->
+    <EditText
+        android:id="@+id/etTaskNameRussian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Russian"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_edittext"
+        android:padding="12dp"
+        android:inputType="text"/>
+
+    <!-- Поле ввода: Қазақша -->
+    <EditText
+        android:id="@+id/etTaskNameKazakh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="English"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_edittext"
+        android:padding="12dp" />
+
+    <!-- Кнопка: Сақтау -->
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="#CF892A03"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="@drawable/background_edittext"
+        />
+
+</LinearLayout>

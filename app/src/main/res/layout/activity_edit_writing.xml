@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#AEF6153D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Поле для ввода заголовка -->
+        <EditText
+            android:id="@+id/etWritingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="30dp" />
+
+        <!-- Поле для ввода текста -->
+        <EditText
+            android:id="@+id/etWritingText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Text"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Поле для вопросов -->
+        <EditText
+            android:id="@+id/etQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Questions (separated by ;) "
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Поле для ответов -->
+        <EditText
+            android:id="@+id/etAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answers (separated by ;) "
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Кнопка "Сохранить изменения" -->
+        <Button
+            android:id="@+id/btnSaveWriting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:background="#CB430202"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

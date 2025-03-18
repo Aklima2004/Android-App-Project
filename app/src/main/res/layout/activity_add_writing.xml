@@ -1,0 +1,156 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#AEF6153D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Поле для ввода заголовка -->
+        <EditText
+            android:id="@+id/etWritingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="30dp" />
+
+        <!-- Поле для ввода текста -->
+        <EditText
+            android:id="@+id/etWritingText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Text"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Заголовок "Questions" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questions"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Вопросы -->
+        <EditText
+            android:id="@+id/etQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question 1"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question 2"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question 3"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question 4"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etQuestion5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question 5"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Заголовок "Answers" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answers"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ответы -->
+        <EditText
+            android:id="@+id/etAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer 1"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer 2"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer 3"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer 4"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAnswer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer 5"
+            android:background="@drawable/background_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Кнопка "Сохранить" -->
+        <Button
+            android:id="@+id/btnSaveWriting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="#CB430202"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

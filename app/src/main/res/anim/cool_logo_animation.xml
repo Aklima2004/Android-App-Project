@@ -1,0 +1,23 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Пульсация (увеличение и уменьшение размера) -->
+    <scale
+        android:fromXScale="0.8"
+        android:fromYScale="0.8"
+        android:toXScale="1.2"
+        android:toYScale="1.2"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="3500"
+        android:repeatMode="reverse"
+        android:repeatCount="1" /> <!-- 3.5 секунды на увеличение/уменьшение -->
+
+    <!-- Поворот на 360 градусов -->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="1500" /> <!-- 3.5 секунды на поворот -->
+
+</set>

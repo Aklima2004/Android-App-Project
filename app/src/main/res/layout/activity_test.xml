@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="#60DFF8">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        android:contentDescription="Delete Task"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Таймер -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time left: 60 seconds"
+        android:textColor="#005EFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <!-- Вопрос -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question will appear here"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <!-- Поле для ввода ответа -->
+    <EditText
+        android:id="@+id/etAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your answer"
+        android:background="@drawable/background_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Счёт -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка Следующий -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_purple"
+        android:textColor="@android:color/white"
+        android:text="Next question"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка Завершить -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_blue"
+        android:textColor="@android:color/white"
+        android:text="Finish"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
